@@ -37,4 +37,3 @@ console.log(`The word "Google" has ${wordLength("Google")} length`);         // 
 
 
 
-
