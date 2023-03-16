@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLocalStorage</title>
+</head>
+<body>
+    <script>
+        let aaa = "Local variable";
+       window.localStorage.setItem("name", "Abhishek Yenurkar");
+       window.localStorage.setItem("city", "Nagpur");
+       window.localStorage.setItem("Pin", 441150);
+       window.localStorage.setItem("district", "Nagpur")
+       window.localStorage.removeItem("city");
+       const district = window.sessionStorage.getItem("district");
+       console.log(district);
+   </script>
+</body>
+</html>
