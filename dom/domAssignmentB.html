@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="profile"> My Profile Details </h2>
+    <h3 id="techStack"> Technology Stack </h3>
+    <ul id="ulList">
+        <li class=> HTML and CSS </li>
+        <li class="liItem"> Agile and JIRA </li>
+        <li class=> Angular or React </li>
+        <li id= "database"> Database</li>
+    </ul>
+    <h2> Hobbies  </h2>
+
+    <a href="https://www.google.com/" target="_blank" id="myProfile"> My Profile </a>
+    
+    <div id="divProject">
+        <p id="project"> Project Details </p>
+        <p> Project Description </p>
+    </div>
+
+
+    <script>
+        console.log("====== Removing  Element  =====");
+        const pElement = document.querySelector("#divProject");
+        const cElement = document.querySelector("#project");
+        pElement.removeChild(cElement);
+        
+        console.log("====== Removing Second List Element of list =====");
+        const ulList = document.querySelector("#ulList");
+        const list = document.querySelector(".liItem");
+        ulList.removeChild(list);
+        
+        console.log("====== Changing Color of h2 Element using JavaScript  =====");
+        const heading = document.querySelector("#profile");
+        heading.style.color = "brown";
+        
+
+        console.log("====== Changing Color of h3 Element using JavaScript  =====");
+        
+        const headingH2 =  document.querySelector("#techStack");
+              headingH2.style.color ="red";
+
+              console.log("====== Changing  the listName oracle to oracle Database  =====");
+
+                      const changeName =  document.querySelector("#database");
+                          changeName.innerHTML="Oracle Database";
+
+
+
+                          
+             </script>
+        </body>
+        
+        </html>
+
